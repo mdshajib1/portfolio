@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C213107_Md_Ataul_Islam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #458887;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            color: black;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #grad {
+            background-image: linear-gradient(to bottom right, rgb(72, 141, 176), rgb(193, 213, 162));
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.5 rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: rgb(17, 17, 16);
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+            /* color: black; */
+        }
+
+        .leftSection {
+            /* background-color: red; */
+            width: 34px;
+            font-size: 2.5rem;
+            /* color: black; */
+            /* margin: 70px 0; */
+
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+
+
+        }
+
+        .leftSection .btn {
+            padding: 19px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 35px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection {
+            /* background-color: red; */
+            width: 34px;
+        }
+
+        .aboutme {
+
+            padding: 0;
+            border: 50px;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            margin-top: o;
+            left: 30rem;
+
+        }
+
+        .rightSection img {
+            width: 75%;
+            margin: 50px 0;
+            border-radius: 100%;
+            background-color: #458859;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: grey;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 67vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 33px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 65px;
+            left: -20px;
+            width: 160px;
+            font-size: 14px;
+
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 80px;
+            color: grey;
+            width: 150px;
+            left: -20px;
+            font-size: 9px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        */ .skills-section {
+            padding-top: 20px;
+        }
+
+        .skills-header {
+            text-align: center;
+            color: #fff;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .skills-header:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            border-radius: 2px;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-tempLate-columns: repeat(5, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-gap: 1rem;
+            padding: 1rem 80px;
+            font-size: 1.2rem;
+        }
+
+        .skills-box {
+            padding: 1rem;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .skills-box:hover>.skills-title: after,
+        .skills-box:hover>.skills-title: before {
+            width: 30px;
+        }
+
+        .skills-box:hover .skills-img {
+            transform: translateX(-20px);
+        }
+
+        .skills-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .skills-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            rigth: 50%;
+            width: 20px;
+            height: 4px;
+            border-radius: 2px 0 0 2px;
+            background-color: #2ecc71;
+            transition: .5s;
+        }
+
+        .skills-title:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100px;
+            height: 4px;
+            border-radius: 0 2px 2px 0;
+            background-color: #2ecc71;
+        }
+
+        .skills-icons {
+            width: 50px;
+            z-index: 2;
+        }
+
+        .skills-img {
+            width: 90px;
+            height: 90px;
+            position: relative;
+            border-radius: 45px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+        }
+
+        .skills-img:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 90px;
+            background: rgba(100, 100, 100, 0.5);
+            border-radius: 45px 0 0 45px;
+        }
+
+        .skills-title h3 {
+            color: #e9eeeb;
+            margin-top: 0.5rem;
+        }
+
+        @media screen and (max-width:990px) {
+            .skills-container {
+                grid-tempLate-columns: repeat(2, 1fr);
+                padding: 2rem 50px;
+            }
+        }
+
+        @media screen and (max-width:650px) {
+            .skills-container {
+                grid-tempLate-columns: 2fr;
+                padding: 2rem 50px;
+            }
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            /* height: 233px; */
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+
+        }
+
+        .leftSection .imggit {
+            position: relative;
+            width: 68px;
+            top: 32px;
+            right: -15px;
+            /* padding: 12px; */
+            /* justify-content: center; */
+        }
+
+        .blog-section {
+            /* background-color: #ffffff; */
+            padding: 20px;
+        }
+
+        @import "compass/css3";
+
+        @import url(https://fonts.googleapis.com/css?family=Merriweather);
+        $red: #e74c3c;
+
+        *,
+        *:before,
+        *:after {
+            @include box-sizing(border-box);
+        }
+
+        html,
+        body {
+            /* background: #f1f1f1; */
+            font-family: 'Merriweather', sans-serif;
+            padding: 1em;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d2ec10;
+            @include text-shadow(1px 1px 0 rgba(white, 1));
+        }
+
+        form {
+            max-width: 600px;
+            text-align: center;
+            margin: 20px auto;
+
+            input,
+            textarea {
+                border: 0;
+                outline: 0;
+                padding: 1em;
+                @include border-radius(8px);
+                display: block;
+                width: 100%;
+                margin-top: 1em;
+                font-family: 'Merriweather', sans-serif;
+                @include box-shadow(0 1px 1px rgba(black, 0.1));
+                resize: none;
+
+                &:focus {
+                    @include box-shadow(0 0px 2px rgba($red, 1) !important);
+                }
+            }
+
+            #input-submit {
+                color: rgb(37, 40, 216);
+                background: $red;
+                cursor: pointer;
+
+                &:hover {
+                    @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
+                }
+            }
+
+            textarea {
+                height: 126px;
+            }
+        }
+
+
+        .half {
+            float: left;
+            width: 48%;
+            margin-bottom: 1em;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        .left {
+            margin-right: 2%;
+        }
+
+
+        @media (max-width: 480px) {
+            .half {
+                width: 100%;
+                float: none;
+                margin-bottom: 0;
+            }
+        }
+
+
+        /* Clearfix */
+        .cf:before,
+        .cf:after {
+            content: " ";
+            /* 1 */
+            display: table;
+            /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Md Shajib Chowdhury Portfolio</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/">Eduction</a></li>
+                    <li><a href="#expreience">Experience</a></li>
+                    <li><a href="#skilltar">Skills</a></li>
+                    <li><a href="/">Blogs</a></li>
+                    <li><a href="#from">Contact Me</a></li>
+                    <!-- <a href="/"><li>About</li></a>
+                    <a href="/"><li>Services</li></a>
+                    <a href="/"><li>projects</li></a>
+                    <a href="/"><li>Contact Me</li></a> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Md Shajib chowdhuy</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <br>
+                <a href="https://github.com/mdshajib1?tab=repositories"><img class="imggit" src="githun (1).png"
+                        alt=""></a>
+                <a href="https://www.linkedin.com/in/md-ataul-islam-shajib-chowdhury-320370227/"><img class="imggit"
+                        src="linkdin.png" alt=""></a>
+
+                <div class="buttons">
+                    <!-- <img src="githun (1).png" alt=""> -->
+                    <Button id="grad" class="btn"><a
+                            href="https://drive.google.com/file/d/14mvS8ArXPUJAY-zdbBfbkQ9IvviHz-MR/view?usp=sharing">Download
+                            Resume</a></Button>
+
+                    <!-- <Button class="btn"><a href=""><img class="imggit" src="githun (1).png" alt=""></a></Button>
+                    <Button class="btn">Linkdin</Button>  -->
+
+                </div><Button><span id="element"></span></Button>
+                <!-- <div>Web Developer</div> -->
+                <!-- Element to contain animated typing -->
+
+            </div>
+            <div class="rightSection">
+                <img src="me.png" alt="">
+            </div>
+
+            <br>
+
+
+
+
+        </section>
+        <section>
+            <!-- About Me  -->
+            <div id="about" class="aboutme">
+                <h1><b>About me</b></h1>
+                <p>Hi! This is Shajib Chowdhury, a third-year student of B.Sc in Computer Science & Engineering.I am
+                    currently working on cyber security and trying to gain confidence using my skills as a web
+                    developer. I will express my innovative creative skills for self and company growth.</p>
+
+            </div>
+        </section>
+        <hr>
+        <section id="expreience" class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="cyber.png" alt="">
+                    <div class="vertical-title">
+                        Cyber Security Researcher [2020-2023]
+                    </div>
+
+
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam pariatur officiis fugit
+                        magnam dolore enim? Maiores accusantium error nesciunt. Sapiente doloribus quisquam dolores
+                        alias saepe fugit ea molestias obcaecati possimus.
+
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="club.jpg" width="auto" alt="">
+                    <div class="vertical-title">
+                        Executive Member at IIUC Computer Club
+                    </div>
+
+
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam pariatur officiis fugit
+                        magnam dolore enim? Maiores accusantium error nesciunt. Sapiente doloribus quisquam dolores
+                        alias saepe fugit ea molestias obcaecati possimus.
+
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+
+
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam pariatur officiis fugit
+                        magnam dolore enim? Maiores accusantium error nesciunt. Sapiente doloribus quisquam dolores
+                        alias saepe fugit ea molestias obcaecati possimus.
+
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="youtube.png" alt="">
+                    <div class="vertical-title">
+                        Conten Creator
+                    </div>
+
+
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam pariatur officiis fugit
+                        magnam dolore enim? Maiores accusantium error nesciunt. Sapiente doloribus quisquam dolores
+                        alias saepe fugit ea molestias obcaecati possimus.
+
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="twitter.png" alt="">
+                    <div class="vertical-title">
+                        New Reporter
+                    </div>
+
+
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam pariatur officiis fugit
+                        magnam dolore enim? Maiores accusantium error nesciunt. Sapiente doloribus quisquam dolores
+                        alias saepe fugit ea molestias obcaecati possimus.
+
+
+                    </div>
+                </div>
+
+                <!-- <div class="vertical">
+                    HTML Developer (2023)
+                </div> -->
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+        <section class="sectionThree">
+            <div class="skill">
+                <div class="skills-section">
+                    <div class="skills-header">
+                        <h1>Skills</h1>
+                    </div>
+                    <div id="skilltar" class="skills-container">
+
+                        <div class="skills-box">
+                            <div class="skills-title">
+                                <div class="skills-img">
+                                    <img src="https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png"
+                                        alt="" class="skills-icons">
+                                </div>
+                                <h3>HTML 5</h3>
+                            </div>
+                            <P> Lorem Lorem Lorem </P>
+                        </div>
+
+
+                        <div class="skills-box">
+                            <div class="skills-title">
+                                <div class="skills-img">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt=""
+                                        class="skills-icons">
+                                </div>
+                                <h3>CSS3</h3>
+                            </div>
+                            <P> Lorem Lorem Lorem </P>
+                        </div>
+
+
+                        <div class="skills-box">
+                            <div class="skills-title">
+                                <div class="skills-img">
+                                    <img src="https://icon-library.net/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                                        alt="" class="skills-icons">
+                                </div>
+                                <h3>JAVASCRIPT</h3>
+                            </div>
+                            <P> Lorem Lorem Lorem </P>
+                        </div>
+
+                        <div class="skills-box">
+                            <div class="skills-title">
+                                <div class="skills-img">
+                                    <img src="java.png" alt="" class="skills-icons">
+                                </div>
+                                <h3>JAVA</h3>
+                            </div>
+                            <P> Lorem Lorem Lorem </P>
+                        </div>
+
+                        <div class="skills-box">
+                            <div class="skills-title">
+                                <div class="skills-img">
+                                    <img src="c.png" alt="" class="skills-icons">
+                                </div>
+                                <h3>C</h3>
+                            </div>
+                            <P> Lorem Lorem Lorem </P>
+                        </div>
+
+                        <div class="skills-box">
+                            <div class="skills-title">
+                                <div class="skills-img">
+                                    <img src="C++.png" alt="" class="skills-icons">
+                                </div>
+                                <h3>C++</h3>
+                            </div>
+                            <P> Lorem Lorem Lorem </P>
+                        </div>
+
+                        <div class="skills-box">
+                            <div class="skills-title">
+                                <div class="skills-img">
+                                    <img src="python.png" alt="" class="skills-icons">
+                                </div>
+                                <h3>Python</h3>
+                            </div>
+                            <P> Lorem Lorem Lorem </P>
+                        </div>
+
+                        <div class="skills-box">
+                            <div class="skills-title">
+                                <div class="skills-img">
+                                    <img src="git.png" alt="" class="skills-icons">
+                                </div>
+                                <h3>git</h3>
+                            </div>
+                            <P> Lorem Lorem Lorem </P>
+                        </div>
+
+                        <div class="skills-box">
+                            <div class="skills-title">
+                                <div class="skills-img">
+                                    <img src="githun (1).png" alt="" class="skills-icons">
+                                </div>
+                                <h3>Github</h3>
+                            </div>
+                            <P> Lorem Lorem Lorem </P>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+        </section>
+        <section id="from">
+            <div>
+                <h1 >Contact Me</h1>
+                <form class="cf">
+                    <div  class="half left cf">
+                        <input type="text" id="input-name" placeholder="Name">
+                        <input type="email" id="input-email" placeholder="Email address">
+                        <input type="text" id="input-subject" placeholder="Subject">
+                    </div>
+                    <div class="half right cf">
+                        <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="input-submit">
+                </form>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Shajib Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <h3>Services</h3>
+                    <br>
+                    <li>Cyber Security</li>
+                    <br>
+                    <li>App Developmen</li>
+                    <br>
+                    <li>Web Developmen</li>
+                    <br>
+                    <li>We Designing</li>
+                </ul>
+            </div>
+            <div class="footer-thirdt">
+                <ul>
+                    <h3>Quick links</h3>
+                    <br>
+                    <li>Home</li>
+                    <br>
+                    <li>About</li>
+                    <br>
+                    <li>Blogs</li>
+                    <br>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <h3>Address</h3>
+                    <br>
+                    <li>Ak-khan,CDD 1,Chattorgram, Banglades</li>
+                    <br>
+                    <li><b>Mobile</b></li>
+                    <p>+8801*********</p>
+                    <br>
+                    <li><b>Email</b></li>
+                    <p>mdshajibchowdhury390@gmail.com</p>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; studywithshajichowdhury.com | All rights reserved
+        </div>
+    </footer>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Cyber Security Research', 'Graphic Designer', 'We Developer', 'video Editor', 'Photographer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
