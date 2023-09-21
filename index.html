@@ -19,6 +19,8 @@
             background-color: rgb(0, 0, 33);
             color: white;
             font-family: 'Poppins', sans-serif;
+            
+            width: 100%;
         }
 
         nav {
@@ -26,6 +28,7 @@
             justify-content: space-around;
             align-items: center;
             height: 80px;
+            width:110%;
             background-color: #458887;
         }
 
@@ -33,6 +36,9 @@
             display: flex;
             justify-content: center;
             color: black;
+            font-family:Arial, Helvetica, sans-serif;
+            font: 1em sans-serif;
+            flex-direction: inherit;
         }
 
         nav ul li {
@@ -62,6 +68,8 @@
         }
 
         .left {
+            font-style: inherit;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 1.5rem;
             color: rgb(17, 17, 16);
         }
@@ -113,7 +121,8 @@
 
         .aboutme {
 
-            padding: 0;
+            padding: 10px;
+            margin: auto;
             border: 50px;
             background-size: cover;
             background-position: center;
@@ -121,7 +130,15 @@
             margin-bottom: 1rem;
             margin-top: o;
             left: 30rem;
+            width: 1000px;
+            height: 300px;
+        }
 
+        .aboutme p {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            font-style: italic;
+            font-size: large;
         }
 
         .rightSection img {
@@ -377,7 +394,6 @@
         @import "compass/css3";
 
         @import url(https://fonts.googleapis.com/css?family=Merriweather);
-        $red: #e74c3c;
 
         *,
         *:before,
@@ -399,7 +415,7 @@
         }
 
         form {
-            max-width: 600px;
+            max-width: 800px;
             text-align: center;
             margin: 20px auto;
 
@@ -518,7 +534,8 @@
                     <!-- <Button class="btn"><a href=""><img class="imggit" src="githun (1).png" alt=""></a></Button>
                     <Button class="btn">Linkdin</Button>  -->
 
-                </div><Button><span id="element"></span></Button>
+                </div>
+                <!-- <Button><span id="element"></span></Button> -->
                 <!-- <div>Web Developer</div> -->
                 <!-- Element to contain animated typing -->
 
@@ -526,7 +543,6 @@
             <div class="rightSection">
                 <img src="me.png" alt="">
             </div>
-
             <br>
 
 
@@ -537,7 +553,7 @@
             <!-- About Me  -->
             <div id="about" class="aboutme">
                 <h1><b>About me</b></h1>
-                <p>Hi! This is Shajib Chowdhury, a third-year student of B.Sc in Computer Science & Engineering.I am
+                <p>Hi! I am Shajib Chowdhury, a third-year student of B.Sc in Computer Science & Engineering.I am
                     currently working on cyber security and trying to gain confidence using my skills as a web
                     developer. I will express my innovative creative skills for self and company growth.</p>
 
@@ -743,9 +759,9 @@
         </section>
         <section id="from">
             <div>
-                <h1 >Contact Me</h1>
+                <h1>Contact Me</h1>
                 <form class="cf">
-                    <div  class="half left cf">
+                    <div class="half left cf">
                         <input type="text" id="input-name" placeholder="Name">
                         <input type="email" id="input-email" placeholder="Email address">
                         <input type="text" id="input-subject" placeholder="Subject">
@@ -797,7 +813,7 @@
                 <ul>
                     <h3>Address</h3>
                     <br>
-                    <li>Ak-khan,CDD 1,Chattorgram, Banglades</li>
+                    <li>Ak-khan,CDA 1,Chattorgram, Banglades</li>
                     <br>
                     <li><b>Mobile</b></li>
                     <p>+8801*********</p>
@@ -818,7 +834,7 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['Cyber Security Research', 'Graphic Designer', 'We Developer', 'video Editor', 'Photographer'],
+            strings: ['Cyber Security Research', 'Graphic Designer', 'Photographer', 'video Editor', 'We Developer'],
             typeSpeed: 50,
         });
     </script>
